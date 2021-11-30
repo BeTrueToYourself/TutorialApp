@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573063507050",
+    "project_id": "tutorialapp-ecbc5",
+    "storage_bucket": "tutorialapp-ecbc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573063507050:android:a9ccd19b7ea2d2bb5e2e13",
+        "android_client_info": {
+          "package_name": "com.example.cse226tutorialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573063507050-o9pf7rl29uhnr55n9gsf613qma1hc65j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPAS2dzmFx6cvq_LrYrkf6dCC-S7dF5q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573063507050-o9pf7rl29uhnr55n9gsf613qma1hc65j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
