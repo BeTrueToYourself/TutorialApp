@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity4"
+    android:background="@color/tomato">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Feedback"
+        android:textStyle="bold"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+
+        android:id="@+id/tv5"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/khaki"
+        android:textSize="20dp"
+        android:text="Kindly Give Your Feedback To Our App....!!"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:hint="Please Give Your Feedback Here....!!"
+        android:id="@+id/fk"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/khaki"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="Kindly Enter Your Name....!!"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:hint="Enter Your Name....!!"
+        android:id="@+id/na"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Us Your Feedback"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center"
+        android:id="@+id/fd"
+        android:layout_marginLeft="10dp"
+        android:onClick="fdk"/>
+
+
+    <ListView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.google.com/"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+       android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/tv4"
+        />
+
+</LinearLayout>

@@ -4,33 +4,308 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="@color/tomato">
 
 
-    <TextView android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+    <ScrollView android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="20dp"
-        android:text=""
-        android:textSize="24sp"
-        android:textStyle="bold"
-/>
+        android:id="@+id/scrollView">
 
-    <Button android:id="@+id/buttonLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-        android:text="Logout"
-        android:padding="10dp"
-        android:textAllCaps="false"
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <TextView android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="20dp"
+                android:text=""
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:background="@color/grey"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Vertical ScrollView:- The android.widget.ScrollView class provides the functionality of scroll view. ScrollView is used to scroll the child elements of palette inside ScrollView. Android supports vertical scroll view as default scroll view. Vertical ScrollView scrolls elements vertically."
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/tv1"
+                android:background="@color/khaki"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="o2VfWU9EUtY"
+                app:autoPlay="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:showFullScreenButton="true" />
 
 
-        />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rating Bar :- RatingBar is used to get the rating from the app user. A user can simply touch, drag or click on the stars to set the rating value. The value of rating always returns a floating point number which may be 1.0, 2.5, 4.5 etc."
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:id="@+id/tv2"
+                android:textSize="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <RatingBar
+
+                android:layout_marginLeft="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingbar" android:numStars="5"
+                android:background="#f90"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:stepSize="0.01" android:isIndicator="false"/>
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="O5I9cSW31ho"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:autoPlay="false"
+                app:showFullScreenButton="true" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Custom Toast:- Android Toast can be used to display information for the short period of time. A toast contains message to be displayed quickly and disappears after sometime. We can also use custom toast to make it look more attractive and customized as per our wish."
+                android:background="@color/khaki"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/tv3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+
+            <Button android:id="@+id/btnShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Custom Toast"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                />
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="sZ1fLi4QZ-g"
+                app:autoPlay="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:showFullScreenButton="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Progress Bar :- We can display the android progress bar dialog box to display the status of work being done e.g. downloading file, analyzing status of work etc. In this example, we are displaying the progress dialog for dummy file download operation."
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/tv4"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Download File"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
+                />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="K5bFv_WDjVY"
+                app:autoPlay="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:showFullScreenButton="true" />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Alarm Manager:- Alarm Manager in Android to send a notification at a desired time in the future. For this we will create a BroadCastReceiver, override it’s onReceive method and call it using a PendingIntent. We will use the setExact method and RTC_WAKEUP to fire the alarm at a specific time. Android AlarmManager allows you to access system alarm. By the help of Android AlarmManager in android, you can schedule your application to run at a specific time in the future. It works whether your phone is running or not. The Android AlarmManager holds a CPU wake lock that provides guarantee not to sleep the phone until broadcast is handled."
+                android:background="@color/khaki"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:id="@+id/tv5"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+            <EditText android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/khaki"
+                android:textSize="20dp"
+                android:textColor="#089"
+                android:textStyle="bold"
+                android:hint="Enter The Time"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:ems="10"/>
+
+            <Button android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="Start The Alarm"/>
+
+            <Button android:id="@+id/RStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Repeat Alarm"/>
+            <Button android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="Cancel"
+                android:layout_marginBottom="10dp"
+                />
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtube_player_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:videoId="yrpimdBRk5Q"
+                app:autoPlay="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:showFullScreenButton="true" />
+
+            <Button android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+                android:background="@color/grey"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:text="Log Out"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="30dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
