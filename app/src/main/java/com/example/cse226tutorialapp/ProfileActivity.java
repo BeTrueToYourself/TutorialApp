@@ -159,17 +159,17 @@ public class ProfileActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id){
             case R.id.aq:
-                Intent askq = new Intent(ProfileActivity.this, MainActivity2.class);
+                Intent askq = new Intent(ProfileActivity.this, AskQuery.class);
                 startActivity(askq);
                 Toast.makeText(getApplicationContext(),"You have clicked on Ask Query?",Toast.LENGTH_LONG).show();
                 return true;
             case R.id.ri:
-                Intent rps = new Intent(ProfileActivity.this, MainActivity3.class);
+                Intent rps = new Intent(ProfileActivity.this, ReportIssue.class);
                 startActivity(rps);
                 Toast.makeText(getApplicationContext(),"You have clicked on Report-Issue.",Toast.LENGTH_LONG).show();
                 return true;
             case R.id.fb:
-                Intent fbk = new Intent(ProfileActivity.this, MainActivity4.class);
+                Intent fbk = new Intent(ProfileActivity.this, Feedback.class);
                 startActivity(fbk);
                 Toast.makeText(getApplicationContext(),"You have clicked on Feedback",Toast.LENGTH_LONG).show();
                 return true;

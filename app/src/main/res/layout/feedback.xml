@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity4"
+    tools:context=".Feedback"
     android:background="@color/tomato">
 
     <TextView
@@ -94,7 +94,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="https://www.google.com/"
+        android:text="https://github.com/BeTrueToYourself/TutorialApp/tree/master"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textFontWeight="@android:integer/config_longAnimTime"

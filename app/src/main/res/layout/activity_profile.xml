@@ -36,13 +36,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Vertical ScrollView:- The android.widget.ScrollView class provides the functionality of scroll view. ScrollView is used to scroll the child elements of palette inside ScrollView. Android supports vertical scroll view as default scroll view. Vertical ScrollView scrolls elements vertically."
+                android:text="Vertical ScrollView :- \nThe android.widget.ScrollView class provides the functionality of scroll view. ScrollView is used to scroll the child elements of palette inside ScrollView. Android supports vertical scroll view as default scroll view. Vertical ScrollView scrolls elements vertically."
                 android:textColor="@color/colorPrimaryDark"
                 android:textStyle="bold"
                 android:id="@+id/tv1"
                 android:background="@color/khaki"
                 android:textSize="20dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Rating Bar :- RatingBar is used to get the rating from the app user. A user can simply touch, drag or click on the stars to set the rating value. The value of rating always returns a floating point number which may be 1.0, 2.5, 4.5 etc."
+                android:text="Rating Bar :- \nRatingBar is used to get the rating from the app user. A user can simply touch, drag or click on the stars to set the rating value. The value of rating always returns a floating point number which may be 1.0, 2.5, 4.5 etc."
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"
                 android:id="@+id/tv2"
@@ -106,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Custom Toast:- Android Toast can be used to display information for the short period of time. A toast contains message to be displayed quickly and disappears after sometime. We can also use custom toast to make it look more attractive and customized as per our wish."
+                android:text="Custom Toast :- \nAndroid Toast can be used to display information for the short period of time. A toast contains message to be displayed quickly and disappears after sometime. We can also use custom toast to make it look more attractive and customized as per our wish."
                 android:background="@color/khaki"
                 android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"
@@ -148,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Progress Bar :- We can display the android progress bar dialog box to display the status of work being done e.g. downloading file, analyzing status of work etc. In this example, we are displaying the progress dialog for dummy file download operation."
+                android:text="Progress Bar :-\nWe can display the android progress bar dialog box to display the status of work being done e.g. downloading file, analyzing status of work etc. In this example, we are displaying the progress dialog for dummy file download operation."
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"
                 android:textSize="20dp"
@@ -198,7 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Alarm Manager:- Alarm Manager in Android to send a notification at a desired time in the future. For this we will create a BroadCastReceiver, override it’s onReceive method and call it using a PendingIntent. We will use the setExact method and RTC_WAKEUP to fire the alarm at a specific time. Android AlarmManager allows you to access system alarm. By the help of Android AlarmManager in android, you can schedule your application to run at a specific time in the future. It works whether your phone is running or not. The Android AlarmManager holds a CPU wake lock that provides guarantee not to sleep the phone until broadcast is handled."
+                android:text="Alarm Manager :- \nAlarm Manager in Android to send a notification at a desired time in the future. For this we will create a BroadCastReceiver, override it’s onReceive method and call it using a PendingIntent. We will use the setExact method and RTC_WAKEUP to fire the alarm at a specific time. Android AlarmManager allows you to access system alarm. By the help of Android AlarmManager in android, you can schedule your application to run at a specific time in the future. It works whether your phone is running or not. The Android AlarmManager holds a CPU wake lock that provides guarantee not to sleep the phone until broadcast is handled."
                 android:background="@color/khaki"
                 android:textSize="20dp"
                 android:textColor="@color/colorPrimaryDark"
@@ -304,8 +304,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

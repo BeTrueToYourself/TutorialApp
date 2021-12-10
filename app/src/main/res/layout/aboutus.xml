@@ -9,11 +9,40 @@
     tools:context=".AboutUs">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="About Us\n\n\n\nCreated By :- Ashwani Kumar\n\nEmail ID :- kumarashwani@gmail.com\n\nContact No. :-8787878787"
-        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@color/khaki"
+        android:textSize="50dp"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
+        android:text="About US"
+        android:id="@+id/t0"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/dp"
+        android:foregroundGravity="center"
+        android:layout_marginBottom="370dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Created By :- \nAshwani Kumar\n\nEmail ID :- \nkumarashwani@gmail.com\n\nContact No. :-\n8787878787"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        android:background="@color/grey"
         android:textSize="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
   ></TextView>
 

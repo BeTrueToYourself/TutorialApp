@@ -10,14 +10,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity2 extends AppCompatActivity {
+public class AskQuery extends AppCompatActivity {
     TextView tv;
     EditText q,p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity2);
+        setContentView(R.layout.askquery);
         tv = findViewById(R.id.tv4);
         SQLiteDatabase database = openOrCreateDatabase("query.db", this.MODE_PRIVATE, null);
         database.execSQL("CREATE TABLE IF NOT EXISTS Query(cn TEXT, qu TEXT PRIMARY KEY);");

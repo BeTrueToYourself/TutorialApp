@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity4 extends AppCompatActivity {
+public class Feedback extends AppCompatActivity {
     TextView tv1;
     EditText s2,n;
     ListView listView;
@@ -30,7 +30,7 @@ public class MainActivity4 extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity4);
+        setContentView(R.layout.feedback);
         tv1 = findViewById(R.id.tv5);
         SQLiteDatabase database = openOrCreateDatabase("feedback.db", this.MODE_PRIVATE, null);
         database.execSQL("CREATE TABLE IF NOT EXISTS Feed(nm TEXT, fd TEXT PRIMARY KEY);");
@@ -72,7 +72,7 @@ public class MainActivity4 extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item){
         if(item.getItemId()==R.id.ou){
             Toast.makeText(getApplicationContext(),"Open The URL",Toast.LENGTH_LONG).show();
-            gotoUrl("https://www.google.com/");
+            gotoUrl("https://github.com/BeTrueToYourself/TutorialApp/tree/master");
 
         }
         else if(item.getItemId()==R.id.cu){

@@ -19,9 +19,9 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".RegistrationActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MainActivity2"/>
-        <activity android:name=".MainActivity3"/>
-        <activity android:name=".MainActivity4"/>
+        <activity android:name=".AskQuery"/>
+        <activity android:name=".ReportIssue"/>
+        <activity android:name=".Feedback"/>
         <activity android:name=".AboutUs"/>
         <receiver android:name=".AlarmBroadcastManager"></receiver>
     </application>

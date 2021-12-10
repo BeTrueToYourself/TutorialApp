@@ -12,13 +12,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-    public class MainActivity3 extends AppCompatActivity {
+    public class ReportIssue extends AppCompatActivity {
         TextView tv;
         EditText s1,e;
 
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity3);
+            setContentView(R.layout.reportissue);
             tv = findViewById(R.id.tv4);
             SQLiteDatabase database = openOrCreateDatabase("issue.db", this.MODE_PRIVATE, null);
             database.execSQL("CREATE TABLE IF NOT EXISTS Issue(em TEXT, iss TEXT PRIMARY KEY);");
